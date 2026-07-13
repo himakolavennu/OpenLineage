@@ -2,6 +2,11 @@
 
 ## [Unreleased](https://github.com/OpenLineage/OpenLineage/compare/1.51.0...HEAD)
 
+### Added
+
+* **dbt: Emit exposures as a dataset facet on dbt model datasets** [`#XXXX`](https://github.com/OpenLineage/OpenLineage/pull/XXXX) [@himakolavennu](https://github.com/himakolavennu)
+  *Adds a `DbtExposuresDatasetFacet` attached to each built model's output dataset, listing the exposures that consume it. Attached in both the classic (manifest/run_results) and structured-logs paths, on successful models only, letting consumers build TABLE → EXPOSURE lineage for dbt Core. Addresses [#926](https://github.com/OpenLineage/OpenLineage/issues/926).*
+
 ## [1.51.0](https://github.com/OpenLineage/OpenLineage/compare/1.50.0...1.51.0)
 
 ### Added
